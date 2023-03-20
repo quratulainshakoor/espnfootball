@@ -2,21 +2,23 @@ import React, { useState } from "react";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-
+import NotificationsIcon from '@mui/icons-material/Notifications';
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-
+import TuneIcon from '@mui/icons-material/Tune';
 // import Button from "@mui/material/Button";
 import Logo from "../../assert/images/logo.png";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { Link } from "react-router-dom";
+import SearchIcon from '@mui/icons-material/Search';
+import { padding } from "@mui/system";
 
 const navItems = [
   { label: "Live Score", to: "/" },
@@ -45,9 +47,9 @@ const Header = (props) => {
         width: "50vw",
       }}
     >
-      {/* <Typography>
-        <img src={Logo} style={{ height: "80px", width: "150px" }} />
-      </Typography> */}
+      
+        <img src={Logo} style={{ height: "30px", width: "100px" }} />
+
 
       <List>
         {navItems.map((item, index) => (
@@ -80,7 +82,7 @@ const Header = (props) => {
       <Box sx={{ display: "flex" }}>
         <AppBar
           sx={{
-            backgroundColor: "#38E54D ",
+            backgroundColor: "#04c8f5 ",
             fontFamily: "monospace",
           }}
         >
@@ -95,105 +97,155 @@ const Header = (props) => {
               <MenuIcon />
             </IconButton>
 
-            <img src={Logo} height={"80px"} width={"150px"} />
+            <img src={Logo} height={"30px"} width={"100px"} />
 
             <Tabs
               sx={{
                 display: { xs: "none", md: "flex" },
-                justifyContent: "space-around",
-                margin: "auto",
+                justifyContent: "center",
+                // margin: "auto",
+                marginLeft:'20px'
               }}
             >
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
                 to="/"
-                label="Home"
+                label="Live Score"
               />
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+                  
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
-                to="/about"
-                label="About Us "
+                to="/series"
+                label="Series "
               />
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
-                to="/portfolio"
-                label="Portfolio "
+                to="/team"
+                label="Team "
               />
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
-                to="/service"
-                label="Service"
+                to="/news"
+                label="News"
               />
 
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+                    "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
-                to="/process"
-                label="Process"
+                to="/feature"
+                label="Features"
               />
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
-                to="/ourskill"
-                label="Our-Skill"
+                to="/video"
+                label="Video"
               />
               <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  fontSize: "13px",
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
                 }}
                 component={Link}
-                to="/contact"
-                label="Contact Us"
+                to="/stats"
+                label="Stats"
               />
+
+<Tab
+                sx={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: "13px",
+                  marginLeft:'200px',
+                  "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
+                }}
+                component={Link}
+                to="/edition"
+                label="Edition Pk"
+              />
+  <div style={{
+   fontSize:'10px',
+   marginLeft:'30px',
+   display:'flex',
+ marginTop:'10px',
+gap:'10px',
+    "&:hover": {
+                    backgroundColor: "#2192FF ",
+                    padding:'20px'
+                  },
+
+
+  }} >
+
+    <WbSunnyIcon />
+<NotificationsIcon/>
+            <TuneIcon/>
+            <SearchIcon/>
+  </div>
             </Tabs>
 
-            {/* <Box sx={{ display: { xs: "none", sm: "block" }, marginX: "auto" }}>
-              {navItems.map((item) => (
-                <Button
-                  key={item}
-                  sx={{
-                    padding: "10px",
-                    color: "#fff",
-                    fontSize: "15px",
-                    fontWeight: "bold",
-                    
-                  
-                  }}
-                >
-                  {item}
-                </Button>
-              ))}
-            </Box> */}
+          
           </Toolbar>
         </AppBar>
         <Box component="nav">
@@ -211,7 +263,8 @@ const Header = (props) => {
                 boxSizing: "border-box",
                 minHeight: "100vh",
                 height: "auto",
-                background: "#9CFF2E",
+                backgroundColor:'#04c8f5'
+
               },
             }}
           >

@@ -1,6 +1,7 @@
 import React from "react";
 // import Card from "./componient/Card/Card";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Card from "./componient/Card/Card";
 import Header from "./componient/Header/Header";
 import Error from "./componient/Pages/Error";
 import Feature from "./componient/Pages/Feature/feature";
@@ -32,7 +33,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
-{/* <Card/> */}
+<Card/>
     </>
   );
 }
