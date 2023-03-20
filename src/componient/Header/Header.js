@@ -18,7 +18,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { Link } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
-import { padding } from "@mui/system";
+
 
 const navItems = [
   { label: "Live Score", to: "/" },

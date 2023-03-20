@@ -11,14 +11,17 @@ import Series from "./componient/Pages/Series/series";
 import Stats from "./componient/Pages/Stats/stats";
 import Team from "./componient/Pages/Teams/team";
 import Video from "./componient/Pages/Videos/video";
-
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Header />
+    <> 
 
+
+      <BrowserRouter>
+     
+      <Header />
         <Routes>
           <Route>
             <Route path="/" element={<LiveScore />} />
@@ -33,7 +36,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
-<Card/>
+      <Card/>
     </>
   );
 }

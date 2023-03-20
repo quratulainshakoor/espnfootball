@@ -2,117 +2,163 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
+import CardActions from '@mui/material/CardActions';
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, Grid } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 
-
-
 export default function DetailCard({ data }) {
-  let Image = data.image;
-  let Images =data.images
   return (
     <>
-
-{/* <Box>
-    <Typography>
-        {navData.head}
-        <span>
-            {navData.num}
-        </span>
-    </Typography>
-</Box> */}
-
-      <Grid item xs={12} md={4}>
-        <Card 
+      <Grid
+        container
+        sx={{
+          background: "#0569ff",
+        }}
+      >
+        <Grid item xs={12} md={3}>
+          <Card
             sx={{
-           width:'250px',
-              padding: "10px",
-              border: "3px solid #eee",
-              borderRadius:'20px'
-            }}>
-       
-
-            
-<CardContent>
+              width: "300px",
+              height: "200px",
+              margin: "30px",
+              border: "1px solid black",
+              borderRadius: "20px",
+            }}
+          >
+            <CardContent>
               <Typography
                 variant="h3"
                 component="div"
                 sx={{
-                  color: "#001433",
-                  fontFamily:'cursive',
+                  color: "grey",
+                  fontFamily: "sans-serif",
                   fontSize: "10px",
                   fontWeight: "bold",
                 }}
               >
                 {data.date}
               </Typography>
-            </CardContent>
-          
-            <Box>
-              <img
-                src={Image}
-                style={{
-          
-                  height: "30px",
-                  width: "30px",
+
+              <Box
+                sx={{
+                  display: "flex",
+                  fontFamily: "sans-serif",
+                  color:'grey'
                 }}
+              >
+                <img
+                  src={data.images}
+                  alt="flag"
+                  style={{
+                    height: "30px",
+                    width: "30px",
+                  }}
                 />
-                <span style={{
-                  margin:'20px',
-           fontWeight:'bold',
-           fontSize:'15px'
-
-                }}>
-
-                {data.name}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "15px",
+                    margin: "5px",
+                   
+                  }}
+                >
+                  {data.name}   560D
+                </span>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  fontFamily: "sans-serif",
+                  color:'grey'
+                }}
+              >
+                <img
+                  src={data.image}
+                  alt="flag"
+                  style={{
+                    height: "30px",
+                    width: "30px",
+                  }}
+                />
+                <span
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "15px",
+                    margin: "5px",
+                  }}
+                >
+                  {data.names}     et0D
                 </span>
                 <br/>
-                <img
-                src={Images}
-                style={{
-              
-                  height: "30px",
-                  width: "30px",
-                }}
-              />
-            </Box>
-
-            <CardContent>
+              </Box>
               <Typography
                 variant="h3"
                 component="div"
                 sx={{
-                  color: "#001433",
-                  fontSize: "15px",
-               fontWeight:'normal'
-                
+                  marginTop:'20px',
+                  color: "grey",
+                  fontSize: "12px",
+                  fontWeight: "bold",
+                  marginBottom:'10px'
                 }}
               >
                 {data.match}
               </Typography>
-            </CardContent>
- <hr/>
-          <Button>
-            {data.btn}
-
-          </Button>
+              <hr />
+        
           
-          <Button>
-            {data.btn1}
-
-          </Button>
-       
-          <Button>
-            {data.btn2}
-
-          </Button>
-  
+                
+              <CardActions>
 
 
-            
-            
-        </Card>
+              <Button
+                  sx={{
+                    fontSize:'10px',
+                    color: "#2B2C2D",
+                    fontWeight: "bold",
+                    
+                  }}
+                >
+                  {data.btn}
+                </Button>
+
+                <Button
+                  sx={{
+                    fontSize:'10px',
+                    color: "#2B2C2D",
+                    fontWeight: "bold",
+                   
+                  }}
+                >
+                  {data.btn1}
+                </Button>
+
+                <Button
+                  sx={{
+                    fontSize:'10px',
+                    color: "#2B2C2D",
+                    fontWeight: "bold",
+                    
+                  }}
+                >
+                  {data.btn2}
+                </Button>
+                <Button
+                  sx={{
+                    fontSize:'10px',
+                    color: "#2B2C2D",
+                    fontWeight: "bold",
+                 
+                  }}
+                >
+                  {data.btn3}
+                </Button>
+              
+              </CardActions>
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
     </>
   );
