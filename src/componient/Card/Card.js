@@ -2,80 +2,87 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 
-import Slider from "react-slick";
-
+// import Slider from "react-slick";
+import Carousel from 'react-elastic-carousel'
 import DetailCard from "./details";
 import { data } from "./data";
-
-// import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 
 
 
 const Card = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
 
-
-
- const settings  = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll:3,
-    initialSlide: 0,
-
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  
 
   return (
     <>
-      <Box sx={{
-        marginTop:'100px'
-      }}>
     
+      <Box
+        sx={{
+         
+          background: "#0569ff",
+            width:'100vw',
+            height:'40vh'
+        
+        }}
+      >
+  <Typography sx={{
+  
+    marginLeft:'70px',
+    color:'white',
+    fontWeight:'bold',
+    fontFamily:'sans-serif',
+fontSize:'13px'
+  }}>
+    <span style={{
+    
+      marginRight:'20px'
+    }}>
+    Match(5)
+    </span>
+
+    <span
+    style={{
+      marginRight:'20px'
+    }}>
+    Ind vs Pak(1) 
+    </span>
+    <span style={{
+      marginRight:'20px'
+    }}>
+ SA vs WI(1)  
+    </span>
+    <span style={{
+      marginRight:'20px'
+    }} >
+ WPL (2) 
+    </span>
+    <span style={{
+      marginRight:'20px'
+    }}>
+    <span style={{
+      marginRight:'20px'
+    }}>
+    ZIM vs NL(1) 
+    </span>
+    </span>
+  </Typography>
+
 
      
-      
-        {/* <Button>
-            <ArrowBackIosIcon />
-          </Button>
-          <Button style={{float:'right'}}>
-            <ArrowForwardIosIcon />
-          </Button> */}
 
-          <Slider {...settings}>
-                
-
-          {data.map((val, i) => (
+              <Carousel breakPoints={breakPoints}>
+            {data.map((val, i) => (
             <DetailCard key={i} data={val} />
           ))}
-        </Slider>
-        
-     
+              </Carousel>
+         
+       
       </Box>
     </>
   );

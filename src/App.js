@@ -1,7 +1,6 @@
 import React from "react";
 // import Card from "./componient/Card/Card";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Card from "./componient/Card/Card";
 import Header from "./componient/Header/Header";
 import Error from "./componient/Pages/Error";
 import Feature from "./componient/Pages/Feature/feature";
@@ -14,6 +13,7 @@ import Video from "./componient/Pages/Videos/video";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
+import Card from "./componient/Card/Card";
 function App() {
   return (
     <> 
@@ -21,7 +21,7 @@ function App() {
 
       <BrowserRouter>
      
-      <Header />
+     
         <Routes>
           <Route>
             <Route path="/" element={<LiveScore />} />
@@ -35,8 +35,11 @@ function App() {
 
           <Route path="*" element={<Error />} />
         </Routes>
+     
+        <Header />
       </BrowserRouter>
       <Card/>
+      {/* <Slider/> */}
     </>
   );
 }

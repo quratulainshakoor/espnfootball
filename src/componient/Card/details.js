@@ -2,6 +2,8 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
+
+
 import CardActions from '@mui/material/CardActions';
 import Typography from "@mui/material/Typography";
 import { Button, Grid } from "@mui/material";
@@ -10,25 +12,23 @@ import { Box } from "@mui/system";
 export default function DetailCard({ data }) {
   return (
     <>
-      <Grid
-        container
-        sx={{
-          background: "#0569ff",
-        }}
-      >
-        <Grid item xs={12} md={3}>
+
+      <Grid container>
+
+     
           <Card
             sx={{
-              width: "300px",
-              height: "200px",
-              margin: "30px",
-              border: "1px solid black",
+              width: "45vw",
+              height: "25vh",
+             marginLeft:'10px',
+          marginTop:'10px',
+              border: 'none',
               borderRadius: "20px",
             }}
           >
             <CardContent>
               <Typography
-                variant="h3"
+                variant="h4"
                 component="div"
                 sx={{
                   color: "grey",
@@ -96,11 +96,11 @@ export default function DetailCard({ data }) {
                 variant="h3"
                 component="div"
                 sx={{
-                  marginTop:'20px',
+                  marginTop:'10px',
                   color: "grey",
                   fontSize: "12px",
                   fontWeight: "bold",
-                  marginBottom:'10px'
+                  // marginBottom:'10px'
                 }}
               >
                 {data.match}
@@ -109,11 +109,14 @@ export default function DetailCard({ data }) {
         
           
                 
-              <CardActions>
+              <CardActions sx={{
+                marginRight:'20px',
+              }} >
 
 
               <Button
                   sx={{
+                    
                     fontSize:'10px',
                     color: "#2B2C2D",
                     fontWeight: "bold",
@@ -149,7 +152,7 @@ export default function DetailCard({ data }) {
                     fontSize:'10px',
                     color: "#2B2C2D",
                     fontWeight: "bold",
-                 
+                    
                   }}
                 >
                   {data.btn3}
@@ -158,7 +161,8 @@ export default function DetailCard({ data }) {
               </CardActions>
             </CardContent>
           </Card>
-        </Grid>
+          
+     
       </Grid>
     </>
   );
