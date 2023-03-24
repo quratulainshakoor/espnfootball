@@ -37,10 +37,11 @@ const Card = () => {
     color:'white',
     fontWeight:'bold',
     fontFamily:'sans-serif',
-fontSize:'13px'
+fontSize:'13px',
+
   }}>
     <span style={{
-    
+    marginTop:'120px',
       marginRight:'20px'
     }}>
     Match(5)

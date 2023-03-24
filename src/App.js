@@ -1,5 +1,5 @@
 import React from "react";
-// import Card from "./componient/Card/Card";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./componient/Header/Header";
 import Error from "./componient/Pages/Error";
@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Card from "./componient/Card/Card";
+import Hero from "./componient/Hero/hero";
 function App() {
   return (
     <> 
@@ -39,7 +40,7 @@ function App() {
         <Header />
       </BrowserRouter>
       <Card/>
-      {/* <Slider/> */}
+      <Hero/>
     </>
   );
 }
