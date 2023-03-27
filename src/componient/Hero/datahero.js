@@ -8,18 +8,7 @@ export const data = [
     image: logo,
   text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?'
   },
-  {
-    id: 2,
-    
-    image: logo,
-  text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?'
-  },
-  {
-    id: 3,
-    
-    image: logo,
-  text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?'
-  },
+ 
  
 
   
