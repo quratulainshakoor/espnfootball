@@ -85,7 +85,9 @@ const Header = (props) => {
           sx={{
             backgroundColor: "#04c8f5 ",
             fontFamily: "monospace",
-          marginTop:'220px'
+          // marginTop:'220px',
+          position:'absolute',
+          top:'250px'
           }}
         >
 

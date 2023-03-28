@@ -48,7 +48,7 @@ export default function DetailCard({ data }) {
                 }}
               >
                 <img
-                  src={data.images}
+                  src={data.flag1}
                   alt="flag"
                   style={{
                     height: "30px",
@@ -74,7 +74,7 @@ export default function DetailCard({ data }) {
                 }}
               >
                 <img
-                  src={data.image}
+                  src={data.flag2}
                   alt="flag"
                   style={{
                     height: "30px",

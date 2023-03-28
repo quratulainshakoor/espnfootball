@@ -27,4 +27,24 @@
 
 .cqQwrw {
     display: none;
+   
+}
+
+
+    .cvyJEp {
+        box-sizing: border-box;
+        transition: all 0.3s ease 0s;
+
+        background-color: rgba(103, 58, 183, 0.1);
+ 
+        border-radius: 50%;
+        border: none;
+        padding: 0px;
+        width: 35px;
+        height: 30px;
+   
+        align-self: center;
+        cursor: pointer;
+        outline: none;
+    
 }
