@@ -1,5 +1,14 @@
 import logo from '../../assert/images/nlp-logo.svg'
-
+import Box1 from '../../assert/images/imgbox1.webp'
+import Box2 from '../../assert/images/imgbox2.webp'
+import Box3 from '../../assert/images/imgbox3.webp'
+import Box4 from '../../assert/images/imgbox4.webp'
+import Box5 from '../../assert/images/imgbox5.webp'
+import Box6 from '../../assert/images/imgbox6.webp'
+import Box7 from '../../assert/images/imgbox7.webp'
+import Box8 from '../../assert/images/imgbox6.webp'
+import Box9 from '../../assert/images/imgbox7.webp'
+import Box10 from '../../assert/images/imgbox6.webp'
 
 export const data = [
   {
@@ -12,7 +21,17 @@ export const data = [
     date: " Today, 1:00 PM ",
     match:'Match starts in 1hr',
     detail:'Live - Aggressive Litton, Talukdar dominate powerplay',
-  text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?'
+  text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?',
+  box1:Box1,
+  box2:Box2,
+  box3:Box3,
+  box4:Box4,
+  box5:Box5,
+  box6:Box6,
+  box7:Box7,
+  box8:Box8,
+  box9:Box9,
+  box10:Box10,
   },
 
   {

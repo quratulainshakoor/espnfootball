@@ -13,6 +13,17 @@ export default function Herocard({ data }) {
   let Image = data.image;
   let Flag1 = data.flag1;
   let Flag2 = data.flag2;
+  let Box1 = data.box1;
+  let Box2 = data.box2;
+  let Box3 = data.box3;
+  let Box4 = data.box4;
+  let Box5 = data.box5;
+  let Box6 = data.box6;
+  let Box7 = data.box7;
+  let Box8 = data.box8;
+  let Box9= data.box9;
+
+  let Box10 = data.box10;
 
   return (
     <>
@@ -807,16 +818,18 @@ World Cup Super League
           <Card
             sx={{
               marginTop: "100px",
-              height: "250px",
+              height: "1250px",
               width: "250px",
               textAlign: "center",
             }}
           >
             <img
-              src={Image}
+              src={Box1}
               style={{
-                height: "130px",
-                width: "130px",
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
               }}
             />
 
@@ -824,35 +837,233 @@ World Cup Super League
               variant="h4"
               sx={{
                 color: "grey",
-                fontSize: "12px",
+                fontSize: "15px",
                 fontFamily: "sans-serif",
                 textAlign: "center",
                 fontWeight: "bold",
-                padding: "0px 10px",
-                lineHeight: "18px",
+        
               }}
             >
-              {data.text}
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+      
+<img
+              src={Box2}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box3}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box4}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box5}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box6}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box7}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box8}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box9}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
+            </Typography>
+<hr/>
+<img
+              src={Box10}
+              style={{
+                marginTop:'30px',
+                borderRadius:'20px',
+                height: "120px",
+                width: "230px",
+              }}
+            />
+
+            <Typography
+              variant="h4"
+              sx={{
+                color: "grey",
+                fontSize: "15px",
+                fontFamily: "sans-serif",
+                textAlign: "center",
+                fontWeight: "bold",
+        
+              }}
+            >
+              On This Day: Lara's 153 not out
             </Typography>
 
-            <CardActionArea>
-              <Button
-                variant="outlined"
-                style={{
-                  border: "2px solid #04c8f5",
-                  borderRadius: "20px",
-                  textTransform: "capitalize",
-                  marginTop: "10px",
-                  padding: "5px 30px",
-                  fontSize: "15px",
-                  fontWeight: "bold",
-                  color: "#04c8f5",
-                }}
-              >
-                <SearchIcon />
-                Ask a question
-              </Button>
-            </CardActionArea>
           </Card>
         </Grid>
       </Grid>
