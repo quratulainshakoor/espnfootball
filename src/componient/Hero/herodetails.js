@@ -420,7 +420,7 @@ Buzz: The Dhoni effect the free
 
 
 
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1}}>
       <Grid container spacing={3}>
       <Grid item xs>
           <Card
@@ -821,6 +821,7 @@ World Cup Super League
               height: "1250px",
               width: "250px",
               textAlign: "center",
+              marginBottom:'20px'
             }}
           >
             <img

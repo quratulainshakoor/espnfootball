@@ -44,8 +44,19 @@ export const data = [
     date: " Today, 1:00 PM ",
     match:'Match starts in 1hr',
     detail:'Live - Aggressive Litton, Talukdar dominate powerplay',
-  text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?'
+  text:'Who has won the most Man-of-the-Match awards in Tests in India in the last 10 years?',
+  box1:Box1,
+  box2:Box2,
+  box3:Box3,
+  box4:Box4,
+  box5:Box5,
+  box6:Box6,
+  box7:Box7,
+  box8:Box8,
+  box9:Box9,
+  box10:Box10,
   },
+
 
  
 
