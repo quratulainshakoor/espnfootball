@@ -231,28 +231,31 @@ const Header = (props) => {
                   
                 }}
               >
-                <IconButton>
+                <IconButton sx={{
+                  padding:'10px',
+                  borderRadius:'0',
+                  backgroundColor: "#2192FF ",
+                }}>
                 <WbSunnyIcon
                   sx={{
-                    // height: "100%",
-                    // width: "25%",
-                    // padding: "10px",
+                    
                     color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
-                      // borderRadius: "50px",
-                      // padding: "3px",
+                 
                     },
                   }}
                 />
 </IconButton>
 
-<IconButton>
+<IconButton sx={{
+                  padding:'10px',
+                  borderRadius:'0',
+                  
+                }}>
 <NotificationsIcon
                   sx={{
-                    // height: "100%",
-                    // width: "25%",
-                    // padding: "10px",
+                    
                     color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
@@ -261,12 +264,14 @@ const Header = (props) => {
                 />
 </IconButton>
              
-              <IconButton>
+              <IconButton sx={{
+                  padding:'10px',
+                  borderRadius:'0',
+                  
+                }}>
               <TuneIcon
                   sx={{
-                    // height:'100%',
-                    // width:'25%',
-                    // padding:'10px',
+                    
                     color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
@@ -276,12 +281,14 @@ const Header = (props) => {
               </IconButton>
                
 
-               <IconButton>
+               <IconButton sx={{
+                  padding:'10px',
+                  borderRadius:'0',
+                  
+                }}>
                <SearchIcon
                   sx={{
-                     height:'100%',
-                    // width:'20%',
-                    //  padding:'10px',
+                    
                     color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
