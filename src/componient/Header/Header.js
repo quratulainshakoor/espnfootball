@@ -2,23 +2,22 @@ import React, { useState } from "react";
 
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import NotificationsIcon from '@mui/icons-material/Notifications';
+import NotificationsIcon from "@mui/icons-material/Notifications";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import TuneIcon from '@mui/icons-material/Tune';
+import TuneIcon from "@mui/icons-material/Tune";
 // import Button from "@mui/material/Button";
 import Logo from "../../assert/images/logo.png";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { Link } from "react-router-dom";
-import SearchIcon from '@mui/icons-material/Search';
-
+import SearchIcon from "@mui/icons-material/Search";
 
 const navItems = [
   { label: "Live Score", to: "/" },
@@ -47,9 +46,7 @@ const Header = (props) => {
         width: "50vw",
       }}
     >
-      
-        <img src={Logo} style={{ height: "30px", width: "100px" }} />
-
+      <img src={Logo} style={{ height: "30px", width: "100px" }} />
 
       <List>
         {navItems.map((item, index) => (
@@ -80,17 +77,16 @@ const Header = (props) => {
   return (
     <>
       <Box sx={{ display: "flex" }}>
-        
         <AppBar
           sx={{
             backgroundColor: "#04c8f5 ",
             fontFamily: "monospace",
-          // marginTop:'220px',
-          position:'absolute',
-          top:'250px'
+            // marginTop:'220px',
+            position: "absolute",
+            top: "250px",
+      
           }}
         >
-
           <Toolbar>
             <IconButton
               color="inherit"
@@ -109,7 +105,7 @@ const Header = (props) => {
                 display: { xs: "none", md: "flex" },
                 justifyContent: "center",
                 // margin: "auto",
-                marginLeft:'20px'
+                marginLeft: "20px",
               }}
             >
               <Tab
@@ -120,7 +116,7 @@ const Header = (props) => {
 
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -132,10 +128,10 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
-                  
+
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -149,7 +145,7 @@ const Header = (props) => {
                   fontSize: "13px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -163,7 +159,7 @@ const Header = (props) => {
                   fontSize: "13px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -176,9 +172,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
-                    "&:hover": {
+                  "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -192,7 +188,7 @@ const Header = (props) => {
                   fontSize: "13px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -206,7 +202,7 @@ const Header = (props) => {
                   fontSize: "13px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -214,43 +210,73 @@ const Header = (props) => {
                 label="Stats"
               />
 
-<Tab
+              <Tab
                 sx={{
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
-                  marginLeft:'200px',
+                  marginLeft: "200px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
                 }}
                 component={Link}
                 to="/edition"
                 label="Edition Pk"
               />
-  <div style={{
-   fontSize:'10px',
-   marginLeft:'30px',
-   display:'flex',
- marginTop:'10px',
-gap:'10px',
-    "&:hover": {
+              <div
+                style={{
+                  fontSize: "10px",
+                  marginLeft: "30px",
+                  display: "flex",
+                  marginTop: "10px",
+                  gap: "10px",
+                  "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding:'20px'
+                    padding: "20px",
                   },
-
-
-  }} >
-
-    <WbSunnyIcon />
-<NotificationsIcon/>
-            <TuneIcon/>
-            <SearchIcon/>
-  </div>
+                }}
+              >
+                <WbSunnyIcon
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#2192FF ",
+                      borderRadius: "50px",
+                      // padding: "3px",
+                      
+                    },
+                  }}
+                />
+                <NotificationsIcon
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#2192FF ",
+                      borderRadius: "50px",
+                      // padding: "3px",
+                    },
+                  }}
+                />
+                <TuneIcon
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#2192FF ",
+                      borderRadius: "50px",
+                      // padding: "3px",
+                    },
+                  }}
+                />
+                <SearchIcon
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#2192FF ",
+                   
+                      // padding: "3px",
+                    },
+                  }}
+                />
+              </div>
             </Tabs>
-
-          
           </Toolbar>
         </AppBar>
         <Box component="nav">
@@ -268,8 +294,7 @@ gap:'10px',
                 boxSizing: "border-box",
                 minHeight: "100vh",
                 height: "auto",
-                backgroundColor:'#04c8f5'
-
+                backgroundColor: "#04c8f5",
               },
             }}
           >

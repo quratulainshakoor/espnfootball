@@ -1,5 +1,5 @@
 
-import React  from "react";
+import React ,{useState} from "react";
 import { Box } from "@mui/material";
 
 import Grid from "@mui/material/Grid";
@@ -26,6 +26,7 @@ const Hero = () => {
             {data.map((val, i) => (
               <Herocard key={i} data={val}  />
             ))}
+            
             
            
 

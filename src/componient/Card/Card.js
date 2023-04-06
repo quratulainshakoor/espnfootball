@@ -26,23 +26,24 @@ const Card = () => {
         sx={{
          
           background: "#0569ff",
-            width:'100vw',
+  
+            width:'100% auto',
             height:'40vh'
         
         }}
       >
   <Typography sx={{
-  
-    marginLeft:'70px',
+
+    marginLeft:'100px',
     color:'white',
     fontWeight:'bold',
     fontFamily:'sans-serif',
-fontSize:'13px',
+fontSize:'15px',
 
   }}>
     <span style={{
-    marginTop:'120px',
-      marginRight:'20px'
+
+      marginRight:'30px'
     }}>
     Match(5)
     </span>
