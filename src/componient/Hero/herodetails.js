@@ -101,11 +101,13 @@ export default function Herocard({ data }) {
               </Button>
             </CardActionArea>
           </Card>
+         
+
           <Grid item xs>
             <Card
               sx={{
                 marginTop: "20px",
-                height: "350px",
+                height: "300px",
                 width: "250px",
                 textAlign: "center",
               }}
@@ -130,196 +132,27 @@ export default function Herocard({ data }) {
                   sx={{
                     fontFamily: "sans-serif",
                     fontWeight: "bold",
-                  }}
-                >
-                  <ArrowForwardIosIcon
-                  
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "20px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                    onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                    }}
-                  >
-                    Afghanistan v Pakistan
-                  </span>
-                  <br />
-
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "10px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                      marginRight: "20px",
-                    }}
-                  >
-                    Western South v India
-                  </span>
-                  <br />
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "20px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                      marginRight: "50px",
-                    }}
-                  >
-                    Australia v India
-                  </span>
-                  <br />
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "20px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                      marginRight: "5px",
-                    }}
-                  >
-                    New Zealand v Srilanka
-                  </span>
-                  <br />
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "20px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                      marginRight: "25px",
-                    }}
-                  >
-                    Bangladesh v Ireland
-                  </span>
-                  <br />
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "10px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                      marginRight: "5px",
-                    }}
-                  >
-                    Women's Championship
-                  </span>
-                  <br />
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "10px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                    }}
-                  >
-                    World Test Championship
-                  </span>
-                  <br />
-                  <ArrowForwardIosIcon
-                    sx={{
-                      fontSize: "15px",
-                      color: "#8CCEF8",
-                      marginRight: "10px",
-                      marginTop: "10px",
-                    }}
-                  />
-                  <span
-                     onClick={handleClick}
-                    style={{
-                      fontSize: "14px",
-                      color: "grey",
-                    }}
-                  >
-                    World Cup Super League
-                  </span>
-                  <br />
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid>
-
-          <Grid item xs>
-            <Card
-              sx={{
-                marginTop: "20px",
-                height: "200px",
-                width: "250px",
-                textAlign: "center",
-              }}
-            >
-              <CardContent>
-                <Typography
-                  variant="h4"
-                  sx={{
-                    color: "grey",
-                    fontSize: "13px",
-                    fontFamily: "sans-serif",
-                    textAlign: "left",
-                    fontWeight: "bold",
-
-                    margin: "10px 20px",
-                  }}
-                >
-                  ESPNcricinfo Apps
-                </Typography>
-                <hr />
-                <Box
-                  sx={{
-                    fontFamily: "sans-serif",
-                    fontWeight: "bold",
                     textAlign: "left",
                   }}
                 >
+                      <ArrowForwardIosIcon
+                    sx={{
+                      fontSize: "15px",
+                      color: "#8CCEF8",
+                      marginRight: "10px",
+                      marginTop: "10px",
+                    }}
+                  />
+                  <span
+                     onClick={handleClick}
+                    style={{
+                      fontSize: "14px",
+                      color: "grey",
+                    }}
+                  >
+                   Western East vs Africa
+                  </span>
+                  <br />
                   <ArrowForwardIosIcon
                     sx={{
                       fontSize: "15px",
@@ -336,6 +169,24 @@ export default function Herocard({ data }) {
                     }}
                   >
                     T20 Time Out
+                  </span>
+                  <br />
+                  <ArrowForwardIosIcon
+                    sx={{
+                      fontSize: "15px",
+                      color: "#8CCEF8",
+                      marginRight: "10px",
+                      marginTop: "10px",
+                    }}
+                  />
+                  <span
+                     onClick={handleClick}
+                    style={{
+                      fontSize: "14px",
+                      color: "grey",
+                    }}
+                  >
+                   Australia vs uk
                   </span>
                   <br />
                   <ArrowForwardIosIcon
@@ -391,6 +242,24 @@ export default function Herocard({ data }) {
                     }}
                   >
                     ICC Ranking
+                  </span>
+                  <br />
+                  <ArrowForwardIosIcon
+                    sx={{
+                      fontSize: "15px",
+                      color: "#8CCEF8",
+                      marginRight: "10px",
+                      marginTop: "10px",
+                    }}
+                  />
+                  <span
+                     onClick={handleClick}
+                    style={{
+                      fontSize: "14px",
+                      color: "grey",
+                    }}
+                  >
+              Srilanka Vs Thailand
                   </span>
                   <br />
                 </Box>

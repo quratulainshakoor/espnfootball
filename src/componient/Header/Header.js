@@ -84,7 +84,6 @@ const Header = (props) => {
             // marginTop:'220px',
             position: "absolute",
             top: "250px",
-      
           }}
         >
           <Toolbar>
@@ -113,10 +112,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
-
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -128,10 +126,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
-
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -143,9 +140,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -157,9 +154,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -172,9 +169,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -186,9 +183,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -200,9 +197,9 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
@@ -215,67 +212,86 @@ const Header = (props) => {
                   color: "white",
                   fontWeight: "bold",
                   fontSize: "13px",
-                  marginLeft: "200px",
+                  marginLeft: "120px",
+                  marginRight: "10px",
+                  height: "100%",
+                  padding: "25px",
                   "&:hover": {
                     backgroundColor: "#2192FF ",
-                    padding: "20px",
                   },
                 }}
                 component={Link}
                 to="/edition"
                 label="Edition Pk"
               />
-              <div
-                style={{
-                  fontSize: "10px",
-                  marginLeft: "30px",
+              <Box
+                sx={{
+                  fontSize: "15px",
                   display: "flex",
-                  marginTop: "10px",
-                  gap: "10px",
-                  "&:hover": {
-                    backgroundColor: "#2192FF ",
-                    padding: "20px",
-                  },
+                  
                 }}
               >
+                <IconButton>
                 <WbSunnyIcon
                   sx={{
+                    // height: "100%",
+                    // width: "25%",
+                    // padding: "10px",
+                    color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
-                      borderRadius: "50px",
-                      // padding: "3px",
-                      
-                    },
-                  }}
-                />
-                <NotificationsIcon
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "#2192FF ",
-                      borderRadius: "50px",
+                      // borderRadius: "50px",
                       // padding: "3px",
                     },
                   }}
                 />
-                <TuneIcon
+</IconButton>
+
+<IconButton>
+<NotificationsIcon
                   sx={{
+                    // height: "100%",
+                    // width: "25%",
+                    // padding: "10px",
+                    color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
-                      borderRadius: "50px",
-                      // padding: "3px",
                     },
                   }}
                 />
-                <SearchIcon
+</IconButton>
+             
+              <IconButton>
+              <TuneIcon
                   sx={{
+                    // height:'100%',
+                    // width:'25%',
+                    // padding:'10px',
+                    color:'white',
+                    "&:hover": {
+                      backgroundColor: "#2192FF ",
+                    },
+                  }}
+                />
+              </IconButton>
+               
+
+               <IconButton>
+               <SearchIcon
+                  sx={{
+                     height:'100%',
+                    // width:'20%',
+                    //  padding:'10px',
+                    color:'white',
                     "&:hover": {
                       backgroundColor: "#2192FF ",
                    
-                      // padding: "3px",
                     },
                   }}
                 />
-              </div>
+               </IconButton>
+             
+              </Box>
             </Tabs>
           </Toolbar>
         </AppBar>
